@@ -1,27 +1,22 @@
-var tl = gsap.timeline({
-  defaults: {
-    duration: 0.5,
-  },
-});
 
 function display_s1() {
-  tl.from(".s1", {
-    y: 100,
-    stagger: 0.2,
+  gsap.from(".s1", {
+    y: 200,
+    stagger: 0.1,
+    duration: 0.5,
     opacity: 0,
   });
-  tl.from(".description-1", {
+  gsap.from(".description-1", {
     y: 100,
+    stagger: 0.1,
     duration: 0.5,
     opacity: 0,
   });
   gsap.from(".right-container-1 img", {
     opacity: 0,
-    duration: 1.5,
+    duration: 1,
     y: 700,
   });
-  //$(".main-container-1").removeClass("display-none");
-  //$(".main-container-2").addClass("display-none");
   document.getElementById("main_s1").classList.remove("hid");
   document.getElementById("main_s2").classList.add("hid");
   document.getElementById("main_s3").classList.add("hid");
@@ -32,29 +27,28 @@ function display_s1() {
 }
 
 function display_s2() {
-  tl.from(".s2", {
+  gsap.from(".s2", {
     y: 100,
-    stagger: 0.2,
+    stagger: 0.1,
+    duration: 0.5,
     opacity: 0,
   });
-  tl.from(".description-2", {
+  gsap.from(".description-2", {
     y: 100,
-    stagger: 0.2,
+    stagger: 0.1,
+    duration: 0.5,
     opacity: 0,
   });
   gsap.from(".page-2-img-1", {
     opacity: 0,
-    duration: 1,
+    duration: 0.5,
     y: 100,
   });
   gsap.from(".page-2-img-2", {
     opacity: 0,
-    duration: 1,
+    duration: 0.5,
     y: -100,
   });
-
-  // $(".main-container-2").removeClass("display-none");
-  // $(".main-container-1").addClass("display-none");
 
   document.getElementById("main_s1").classList.add("hid");
   document.getElementById("main_s2").classList.remove("hid");
@@ -66,29 +60,28 @@ function display_s2() {
 }
 
 function display_s3() {
-  tl.from(".s3", {
+  gsap.from(".s3", {
     y: 100,
-    stagger: 0.2,
+    stagger: 0.1,
+    duration: 0.5,
     opacity: 0,
   });
-  tl.from(".description-3", {
+  gsap.from(".description-3", {
     y: 100,
-    stagger: 0.2,
+    stagger: 0.1,
+    duration: 0.5,
     opacity: 0,
   });
   gsap.from(".page-3-img-1", {
     opacity: 0,
-    duration: 1,
+    duration: 0.5,
     y: 100,
   });
   gsap.from(".page-3-img-2", {
     opacity: 0,
-    duration: 1,
+    duration: 0.5,
     y: -100,
   });
-
-  // $(".main-container-2").removeClass("display-none");
-  // $(".main-container-1").addClass("display-none");
 
   document.getElementById("main_s1").classList.add("hid");
   document.getElementById("main_s2").classList.add("hid");
@@ -100,39 +93,40 @@ function display_s3() {
 }
 
 function display_s4() {
-  tl.from(".s4", {
+  gsap.from(".s4", {
     y: 100,
-    stagger: 0.2,
+    stagger: 0.1,
+    duration: 0.5,
     opacity: 0,
   });
-  tl.from(".description-4", {
+  gsap.from(".description-4", {
     y: 100,
-    stagger: 0.2,
+    stagger: 0.1,
+    duration: 0.5,
     opacity: 0,
   });
   gsap.from(".page-4-img-2", {
     opacity: 0,
-    duration: 1,
+    duration: 0.5,
     y: 100,
   });
   gsap.from(".page-4-img-3", {
     opacity: 0,
-    duration: 1,
+    duration: 0.5,
     y: -100,
   });
   gsap.from(".page-4-img-4", {
     opacity: 0,
-    duration: 1,
-    y: -100,
+    duration: 0.5,
+    y: -200,
+    x: 200,
   });
   gsap.from(".page-4-img-5", {
     opacity: 0,
-    duration: 1,
-    y: -100,
+    duration: 0.5,
+    y: 200,
+    x: 200,
   });
-
-  // $(".main-container-2").removeClass("display-none");
-  // $(".main-container-1").addClass("display-none");
 
   document.getElementById("main_s1").classList.add("hid");
   document.getElementById("main_s2").classList.add("hid");
@@ -144,40 +138,42 @@ function display_s4() {
 }
 
 function display_s5() {
-  tl.from(".s5", {
+  gsap.from(".s5", {
     y: 100,
-    stagger: 0.2,
+    stagger: 0.1,
+    duration: 0.5,
     opacity: 0,
   });
-  tl.from(".description-5", {
+  gsap.from(".description-5", {
     y: 100,
-    stagger: 0.2,
+    stagger: 0.1,
+    duration: 0.5,
     opacity: 0,
   });
   gsap.from(".page-5-img-1", {
     opacity: 0,
-    duration: 1,
-    y: 100,
+    duration: 0.5,
+    y: 200,
   });
   gsap.from(".page-5-img-2", {
     opacity: 0,
-    duration: 1,
-    y: -100,
+    duration: 0.5,
+    y: -200,
   });
   gsap.from(".page-5-img-3", {
     opacity: 0,
-    duration: 1,
-    y: -100,
+    duration: 0.5,
+    y: 300,
   });
   gsap.from(".page-5-img-4", {
     opacity: 0,
-    duration: 1,
+    duration: 0.5,
     y: -100,
   });
   gsap.from(".page-5-img-5", {
     opacity: 0,
-    duration: 1,
-    y: -100,
+    duration: 0.5,
+    y: 100,
   });
 
   document.getElementById("main_s1").classList.add("hid");
@@ -190,20 +186,22 @@ function display_s5() {
 }
 
 function display_s6() {
-  tl.from(".s6", {
+  gsap.from(".s6", {
     y: 100,
-    stagger: 0.2,
+    stagger: 0.1,
+    duration: 0.5,
     opacity: 0,
   });
-  tl.from(".description-6", {
+  gsap.from(".description-6", {
     y: 100,
-    stagger: 0.2,
+    stagger: 0.1,
+    duration: 0.5,
     opacity: 0,
   });
   gsap.from(".page-6-img-1", {
     opacity: 0,
-    duration: 1,
-    y: 100,
+    duration: 0.5,
+    y: 300,
   });
 
   document.getElementById("main_s1").classList.add("hid");
@@ -216,24 +214,26 @@ function display_s6() {
 }
 
 function display_s7() {
-  tl.from(".s7", {
+  gsap.from(".s7", {
     y: 100,
-    stagger: 0.2,
+    stagger: 0.1,
+    duration: 0.5,
     opacity: 0,
   });
-  tl.from(".description-7", {
+  gsap.from(".description-7", {
     y: 100,
-    stagger: 0.2,
+    stagger: 0.1,
+    duration: 0.5,
     opacity: 0,
   });
   gsap.from(".page-7-img-1", {
     opacity: 0,
-    duration: 1,
+    duration: 0.5,
     y: 100,
   });
   gsap.from(".page-7-img-2", {
     opacity: 0,
-    duration: 1,
+    duration: 0.5,
     y: 100,
   });
 
@@ -313,4 +313,3 @@ var t7 = gsap.timeline({
     onEnterBack: () => display_s7(),
   },
 });
-
